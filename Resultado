@@ -1,0 +1,189 @@
+python Verificar.py
+
+=== Procesando Factura.jpg ===
+--- TEXTO OCR NORMALIZADO ---
+factura no: 65498230
+
+fecha de emisi6n: 02/16/2021
+vendedor: cliente:
+duncan ltd edwards-archer
+74561 kenneth island unidad 6000 casilla 9800
+west nicole, fl 31612 dpo aa 91089
+iva: 964-84-8594 iva: 909-91-4017
+iban: gbo4bwvq0100293381531
+articulos
+no. descripcion cantidad um _ precio neto valor neto iva[%] valor
+‘. alfombra de flores acolchada, 2,00 cada 125,50 251,00 10% 276,10
+saia tapiz orderiador
+2. piso de madera de 1° clase, 1,00 450,00 450,00 10% 495,00
+sala
+resumen valor neto iva va total
+
+total 701,00 70,10 70,10 771,10
+
+
+--- FACTURA (Precio Neto / Valor Neto) ---
+Linea: 2.0 x 125.5 = 251.00 | OCR Valor Neto: 251.00 | IVA: 25.10 | Valor Total: 276.10
+Linea: 1.0 x 0.0 = 0.00 | OCR Valor Neto: 450.00 | IVA: 45.00 | Valor Total: 495.00
+
+TOTAL CALCULADO: 771.10 | IVA CALCULADO: 70.10
+
+=== Procesando Factura1.png ===
+--- TEXTO OCR NORMALIZADO ---
+cantidad detalle precio
+
+unidad
+2 gaseosa 20 40
+5 galletas 5 25
+
+total 65
+
+
+--- FACTURA UNIVERSAL (Fallback) ---
+Linea: 2.0 x 20.0 = 40.00 | OCR Importe: 40.00 | ✔️
+Linea: 5.0 x 5.0 = 25.00 | OCR Importe: 25.00 | ✔️
+
+TOTAL CALCULADO: 65.00
+
+=== Procesando Factura2.png ===
+--- TEXTO OCR NORMALIZADO ---
+factura n®& 001-123456
+
+venededor: 24/09/2025
+supermercado andino srl valentina rojas
+nit: 356789023 cl: 1234567 cbba
+calle ayacucho 120 av. américa 300
+tel. paz- bolivia cochabamba - bolivia
+no. descripcién cantidad um face importe
+1 gaseosa 2 cada 10 20
+3 galletas 3 cada 5) 15
+3 pan 1 8 8
+5 leche 5 7 35
+4 jabon 4 6 24
+5 fideos 2; 9 18
+7 azdcan 1 kg 12 12
+8 manzanas 6 kg 3 18
+total
+
+condiciones de pago: contado
+
+observaciones: gracias por su compra
+
+firma y sello:
+
+
+--- FACTURA UNIVERSAL (Fallback) ---
+Linea: 2.0 x 10.0 = 20.00 | OCR Importe: 20.00 | ✔️
+Linea: 3.0 x 5.0 = 15.00 | OCR Importe: 15.00 | ✔️
+Linea: 1.0 x 8.0 = 8.00 | OCR Importe: 8.00 | ✔️
+Linea: 5.0 x 7.0 = 35.00 | OCR Importe: 35.00 | ✔️
+Linea: 4.0 x 6.0 = 24.00 | OCR Importe: 24.00 | ✔️
+Linea: 2.0 x 9.0 = 18.00 | OCR Importe: 18.00 | ✔️
+Linea: 1.0 x 12.0 = 12.00 | OCR Importe: 12.00 | ✔️
+Linea: 6.0 x 3.0 = 18.00 | OCR Importe: 18.00 | ✔️
+
+TOTAL CALCULADO: 150.00
+
+=== Procesando Factura3.png ===
+--- TEXTO OCR NORMALIZADO ---
+declarando
+
+factura
+fecha de factura: dd/mm/aaaa
+numero de factura: 2024-0001
+
+fecha de vencimiento: — dd/mm/aaaa
+
+tu nombre y apellidos nombre o razon social de tu cliente
+direccién: direccién:
+nif: cir:
+cp y ciudad: cp y ciudad:
+email: email:
+descripcién unidades precio unitario (€) precio (€)
+producto 1 2 100 200,00
+producto 2 4 150 600,00
+producto 3 7 93 651,00
+base imponible: 1.451 €
+iva (tipo) : 304,71€
+irpf (tipo) : -217,65 €
+
+totals €1.538,06
+
+
+--- FACTURA CON IMPUESTOS ---
+Base imponible: 1451.0
+IVA: 304.71
+IRPF: -217.65
+TOTAL OCR: 1538.06
+TOTAL CALCULADO (Base+IVA+IRPF): 1538.06 | ✔️
+
+=== Procesando thumbnail.png ===
+--- TEXTO OCR NORMALIZADO ---
+invoice no: 65498230
+
+date of issue:
+
+seller:
+
+duncan ltd
+74561 kenneth island
+west nicole, fl 31612
+
+tax id: 964-84-8594
+iban: gb04bwvq00110029381531
+
+items
+
+no. description
+
+qty
+1, garden flower carpet quilted 1,00
+bedroom floor princess tapis
+lace rug carpets
+summary
+vat [%]
+10%
+
+total
+
+um
+
+each
+
+02/16/2021
+
+client:
+edwards-archer
+unit 6000 box 9800
+dpo aa 91089
+
+tax id: 909-91-4017
+
+net price net worth vat [%]
+
+45,50 45,50 10%
+net worth vat
+45,50 4.55
+$ 45,50 $4.55
+
+gross
+worth
+
+50,05
+
+gross worth
+50,05
+
+$ 50,05
+$ 50,05
+
+
+--- FACTURA EN (English) ---
+
+--- FACTURA EN (English) ---
+Qty: 1.0
+Net price: None
+Net worth: 45.5
+VAT (%): None → 4.55
+Gross (OCR): 50.05
+TOTAL CALCULADO: 50.05 | ✔️
